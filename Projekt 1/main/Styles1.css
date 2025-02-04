@@ -1,0 +1,339 @@
+* {
+    <!--border: 1px solid yellow;-->
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2B2B2B;
+}
+
+
+
+
+
+/* HEADER STYLE */
+#logo {
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: 25vw;
+}
+
+header {
+    z-index: 2;
+    transform: translateY(-8px);
+    width: 100%;
+    display: flex;
+    background-color: #0E0E0E;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-bottom: 4px solid #f8f8f8;
+}
+
+nav {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav li {
+    display: inline-block;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 1.5vw;
+    line-height: 4vw;
+    transition: all 0.35s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    background-color: #c7fafc;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 0.3vw solid #F00;
+    border-radius: 1vw;
+    transition: all 0.35s;
+}
+
+nav a:hover {
+    color: #c7fafc;
+    background-color: #0E0E0E;
+}
+
+nav li:hover {
+    transform: translateY(-1vw);
+}
+
+
+
+
+/* THE HEADER IMAGE */
+#full-museum {
+    width: 100%;
+    border-bottom: 1vw solid #f8f8f8;
+}
+
+
+
+
+/* OPĆENITO */
+#main-title {
+    color: #c7fafc;
+    font-weight: bold;
+    font-size: 4vw;
+    font-family: "Goudy Old Style", Georgia, Times, serif;
+    text-align: center;
+    letter-spacing: 10px;
+    border: 10px double #f8f8f8;
+    margin-bottom: 8vw;
+}
+#paragraph {
+    color: #f8f8f8;
+    width: 85vw;
+    margin: auto;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 1.7vw;
+    line-height: 2.4vw;
+    text-align: justify;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0.5vw solid #FFF;
+    border-radius: 20px;
+    background-color: #0E0E0E;
+    box-shadow: 0 0 5px #0E0E0E,
+    0 0 25px #0E0E0E, 0 0 50px #0E0E0E,
+    0 0 100px #0E0E0E, 0 0 200px #0E0E0E;
+}
+
+
+
+/* POVIJEST, GRADITELJI, UMJETNINE */
+#history, #builders, #artworks {
+    margin: 14vw auto;
+    width: 80vw;
+    height: 50vw;
+    border: 0.5vw solid #FFF;
+    border-radius: 20px;
+    background-color: #0E0E0E;
+    box-shadow: 0 0 5px #0E0E0E,
+    0 0 25px #0E0E0E, 0 0 50px #0E0E0E,
+    0 0 100px #0E0E0E, 0 0 200px #0E0E0E;
+}
+
+#history-image, #builders-image, #artworks-image {
+    height: 20vw;
+    display: flex;
+}
+
+#history-image p, #builders-image p, #artworks-image p {
+    color: #f8f8f8;
+    font-family: "Verdana", sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    width: 40vw;
+    border-bottom: 0.8vw double #f8f8f8;
+    border-top: 0.8vw double #f8f8f8;
+}
+
+#history-paragraph, #builders-paragraph, #artworks-paragraph {
+    height: 28vw;
+    border-top: 0.5vw solid #FFF;
+    overflow: auto;
+}
+
+#history-paragraph p, #builders-paragraph p, #artworks-paragraph p {
+    color: #f8f8f8;
+    font-family: "Verdana", sans-serif;
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: justify;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    line-height: 2.4vw;
+    padding-top: 0.5vw;
+}
+
+#history-paragraph p:first-letter, #builders-paragraph p:first-letter, #artworks-paragraph p:first-letter {
+    font-size: 2.5vw;
+    color: orangered;
+}
+
+#history-paragraph div {
+    display: flex;
+    justify-content: center;
+}
+
+#history-paragraph img {
+    width: 50vw;
+}
+
+#history-image img, #builders-image img, #artworks-image img {
+    width: 30vw;
+    border-top-left-radius: 1.6vh
+}
+
+
+
+
+/* GRADITELJI AUDIO */
+#audio-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+audio {
+    margin: 1vw 0;
+    width: 50vw;
+    height: 5vw;
+}
+
+
+
+
+/* UMJETNINE VIDEO */
+#video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    margin-top: 4vw;
+    width: 50vw;
+}
+
+
+
+
+/* UMJETNICI */
+#artists {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
+}
+
+#artists div {
+    text-align: center;
+}
+
+#artists-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 85vw;
+    height: 45vw;
+    border: 0.5vw solid #FFF;
+    border-radius: 3vw;
+    background-color: #0E0E0E;
+    box-shadow: 0 0 5px #0E0E0E,
+    0 0 25px #0E0E0E, 0 0 50px #0E0E0E,
+    0 0 100px #0E0E0E, 0 0 200px #0E0E0E;
+}
+
+#umjetnici-naslov {
+    color: white;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+    transform: translateY(11vw);
+}
+
+#artists img {
+    width: 12vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
+    border-radius: 3vw;
+}
+
+#artists-holder p {
+    color: #FFF;
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: #0E0E0E;
+    width: 100%;
+    margin-top: 10vw;
+    border-top: 1vw solid #f8f8f8;
+}
+
+footer img {
+    width: 60vw;
+}
+
+#image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 2vw 0;
+}
+
+footer>div>p {
+    color: #FFF;
+    font-family: "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+}
+
+#p-div {
+    padding: 1vw 10vw;
+}
+
+
+
+/* @MEDIA QUERY */
+@media (min-width: 1200px) {
+    #history-paragraph p, #builders-paragraph p, #artworks-paragraph p {
+        font-size: 1.2vw;
+        line-height: 1.9vw;
+    }
+
+    #history-paragraph p:first-letter, #builders-paragraph p:first-letter, #artworks-paragraph p:first-letter {
+        font-size: 2vw;
+    }
+
+    #history-image p, #builders-image p,#artworks-image p {
+        font-size: 3.5vw;
+    }
+
+    #paragraph {
+        font-size: 1.2vw;
+    }
+
+    #artists p {
+        font-size: 2.5vw
+    }
+
+    footer>div>p {
+        font-size: 1.5vw;
+    }
+}
